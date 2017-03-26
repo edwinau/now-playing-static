@@ -196,9 +196,14 @@ figure {
   margin: 0;
 }
 
-h5.site-logo{
+.footer-nav-item{
   display: none;
 }
+footer {
+   margin-left: 0%;
+   width: 100%;
+}
+
 
 @media (min-width:768px) {
   .site-nav {
@@ -211,15 +216,32 @@ h5.site-logo{
      margin-left: 8%;
   }
   h1.site-logo {
-  display: none;
+    display: none;
   }
   img.footer-nav-item{
     width: 7%;
-    position: absolute;
+    position: fixed;
     top: 10px;
-    left: 3.5px;
+    left: 5px;
     z-index: 1000;
   }
 
-
+  li.site-nav-item{
+    position: relative;
+    top: 75px;
+    width: 90%;
+    left: 4px;
+    margin: auto;
+  }
+  site-nav-item-label{
+    text-align: center;
+    margin: auto;
+  }
+  .movie-overview {
+    display: block;
+  }
+  footer{
+       margin-left: 8%;
+       width: 100%;
+    }
 }
