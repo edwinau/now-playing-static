@@ -215,10 +215,7 @@ footer {
   .movie{
      margin-left: 8%;
   }
-  h1.site-logo {
-    display: none;
-  }
-  img.footer-nav-item{
+  h1.site-logo{
     width: 7%;
     position: fixed;
     top: 10px;
@@ -240,8 +237,7 @@ footer {
   .movie-overview {
     display: block;
   }
-  footer{
-       margin-left: 8%;
-       width: 100%;
-    }
+  footer {
+    display: block;
+  }
 }
