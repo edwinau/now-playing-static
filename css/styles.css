@@ -195,3 +195,31 @@ figure {
 .about > p {
   margin: 0;
 }
+
+h5.site-logo{
+  display: none;
+}
+
+@media (min-width:768px) {
+  .site-nav {
+    position: fixed;
+    left: 0px;
+    width: 8%;
+    height: 100%;
+  }
+  .movie{
+     margin-left: 8%;
+  }
+  h1.site-logo {
+  display: none;
+  }
+  img.footer-nav-item{
+    width: 7%;
+    position: absolute;
+    top: 10px;
+    left: 3.5px;
+    z-index: 1000;
+  }
+
+
+}
