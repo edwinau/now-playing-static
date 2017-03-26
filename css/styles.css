@@ -50,7 +50,7 @@ figure {
   position: fixed;
   top: 1rem;
   left: 1rem;
-  width: 80px;
+  width: 20%;
   height: 80px;
   margin: 0;
   z-index: 100;
@@ -240,4 +240,57 @@ footer {
   footer {
     display: block;
   }
+}
+
+@media (min-width:992px) {
+  .site-nav {
+    position: fixed;
+    left: 0px;
+    width: 8%;
+    height: 100%;
+  }
+  .movie{
+     margin-left: 8%;
+  }
+  h1.site-logo{
+    width: 7%;
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    z-index: 1000;
+  }
+
+  li.site-nav-item{
+    position: relative;
+    top: 75px;
+    width: 90%;
+    left: 4px;
+    margin: auto;
+  }
+  site-nav-item-label{
+    text-align: center;
+    margin: auto;
+  }
+  .movie-overview {
+    display: block;
+  }
+  footer {
+    display: block;
+  }
+  .movie-poster {
+    display: inline;
+    width: 33%;
+  }
+  .movie-backdrop{
+    display: none;
+  }
+  .movie-overview{
+    display: none;
+  }
+
+  div.movie-details{
+    display: inline;
+    width: 33%
+  }
+
 }
