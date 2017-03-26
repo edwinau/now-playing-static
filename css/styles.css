@@ -209,27 +209,31 @@ footer {
   .site-nav {
     position: fixed;
     left: 0px;
-    width: 8%;
+    width: 80px;
     height: 100%;
   }
   .movie{
-     margin-left: 8%;
+     margin-left: 80px;
   }
   h1.site-logo{
-    width: 7%;
+    width: 60px;
     position: fixed;
-    top: 10px;
-    left: 5px;
+    top: 30px;
+    left: 12px;
     z-index: 1000;
   }
 
   li.site-nav-item{
     position: relative;
-    top: 75px;
+    top: 100px;
+    left: 5px;
     width: 90%;
-    left: 4px;
-    margin: auto;
   }
+
+.site-nav-list{
+  height: 100%;
+}
+
   site-nav-item-label{
     text-align: center;
     margin: auto;
@@ -240,33 +244,46 @@ footer {
   footer {
     display: block;
   }
+  figure.movie-image{
+    width: 100%
+  }
+  div.movie-details{
+    margin: 0 0 0 0px;
+    width: 100%;
+    padding: 0 15px;
+    right: 0;
+  }
 }
 
-@media (min-width:992px) {
+@media (min-width:922px) {
   .site-nav {
     position: fixed;
     left: 0px;
-    width: 8%;
+    width: 80px;
     height: 100%;
   }
   .movie{
-     margin-left: 8%;
+     margin-left: 80px;
   }
   h1.site-logo{
-    width: 7%;
+    width: 60px;
     position: fixed;
-    top: 10px;
-    left: 5px;
+    top: 30px;
+    left: 12px;
     z-index: 1000;
   }
 
   li.site-nav-item{
     position: relative;
-    top: 75px;
+    top: 100px;
+    left: 5px;
     width: 90%;
-    left: 4px;
-    margin: auto;
   }
+
+.site-nav-list{
+  height: 100%;
+}
+
   site-nav-item-label{
     text-align: center;
     margin: auto;
@@ -277,20 +294,28 @@ footer {
   footer {
     display: block;
   }
+  figure.movie-image{
+    width: 100%
+  }
+  div.movie-details{
+    margin: 0 0 0 0px;
+    width: 100%;
+    padding: 0 15px;
+    right: 0;
+  }
+
   .movie-poster {
     display: inline;
-    width: 33%;
   }
-  .movie-backdrop{
-    display: none;
-  }
-  .movie-overview{
+
+  .movie:first-child .movie-poster{
     display: none;
   }
 
-  div.movie-details{
-    display: inline;
-    width: 33%
+  .movie-backdrop {
+    display: none;
   }
 
-}
+  .movie:first-child .movie-backdrop{
+    display: block;
+  }
