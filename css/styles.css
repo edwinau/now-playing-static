@@ -252,9 +252,58 @@ footer {
     width: 100%;
     padding: 0 15px;
     right: 0;
+    background: none;
   }
 }
 
+@media (min-width:992px) {
+
+ main {
+   margin-left: 80px;
+ }
+ .movie {
+   width: 33%;
+   display: inline-block;
+   margin-left: 0px;
+ }
+
+ .movie-backdrop{
+   display: none;
+ }
+
+ .movie-image{
+   display: inline-block;
+ }
+
+  .movie:first-child .movie-poster{
+   display: none;
+ }
+
+ .movie:first-child .movie-backdrop{
+  display: block;
+}
+
+.movie:first-child {
+  display: block;
+  width: 100%
+}
+
+ .movie-poster {
+   display: inline-block;
+ }
+  .movie-overview{
+   display: none;
+ }
+
+ .movie-title{
+   line-height: 1
+ }
+
+
+
+}
+
+/*
 @media (min-width:922px) {
   .site-nav {
     position: fixed;
@@ -262,9 +311,11 @@ footer {
     width: 80px;
     height: 100%;
   }
+
   .movie{
-     margin-left: 80px;
+     margin-left: 0px;
   }
+
   h1.site-logo{
     width: 60px;
     position: fixed;
@@ -295,17 +346,27 @@ footer {
     display: block;
   }
   figure.movie-image{
-    width: 100%
-  }
-  div.movie-details{
-    margin: 0 0 0 0px;
     width: 100%;
-    padding: 0 15px;
+    display: inline;
+    position: relative;
+  }
+  .movie:nth-child(n+2) div.movie-details{
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 0 0px 0px 0px;
     right: 0;
+  }
+  .movie:first-child div.movie-details{
+    width: 100%;
+    position: absolute;
+    left: 100px;
   }
 
   .movie-poster {
     display: inline;
+    width: 33.333%;
+    margin: 0px;
+    padding: 0px;
   }
 
   .movie:first-child .movie-poster{
@@ -317,5 +378,24 @@ footer {
   }
 
   .movie:first-child .movie-backdrop{
+    position: relative;
     display: block;
+      }
+
+  .movie-overview {
+    display: none;
   }
+
+  .movie:first-child .movie-overview{
+    display: block;
+    color: black;
+  }
+
+  .movie {
+    display: inline;
+    position: relative;
+  }
+
+  main {
+    margin-left: 80px;
+  }*/
