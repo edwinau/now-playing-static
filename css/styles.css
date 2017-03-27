@@ -285,7 +285,7 @@ footer {
 }
 
  .movie-poster {
-   display: inline-block;
+   display: block;
  }
   .movie-overview{
    display: none;
@@ -295,7 +295,7 @@ footer {
    display: block;
  }
   figure {
-    height: ;
+    overflow-x: auto;
   }
 
 footer {
