@@ -244,9 +244,7 @@ footer {
   footer {
     display: block;
   }
-  figure.movie-image{
-    width: 100%
-  }
+
   div.movie-details{
     margin: 0 0 0 0px;
     width: 100%;
@@ -262,17 +260,15 @@ footer {
    margin-left: 80px;
  }
  .movie {
-   width: 33%;
-   display: inline-block;
+   width: 33.33333333%;
+   display: block;
    margin-left: 0px;
+   float: left;
  }
+
 
  .movie-backdrop{
    display: none;
- }
-
- .movie-image{
-   display: inline-block;
  }
 
   .movie:first-child .movie-poster{
@@ -295,107 +291,15 @@ footer {
    display: none;
  }
 
- .movie-title{
-   line-height: 1
+ .movie:first-child .movie-overview {
+   display: block;
  }
+  figure {
+    height: ;
+  }
 
-
-
+footer {
+  clear: left;
 }
 
-/*
-@media (min-width:922px) {
-  .site-nav {
-    position: fixed;
-    left: 0px;
-    width: 80px;
-    height: 100%;
-  }
-
-  .movie{
-     margin-left: 0px;
-  }
-
-  h1.site-logo{
-    width: 60px;
-    position: fixed;
-    top: 30px;
-    left: 12px;
-    z-index: 1000;
-  }
-
-  li.site-nav-item{
-    position: relative;
-    top: 100px;
-    left: 5px;
-    width: 90%;
-  }
-
-.site-nav-list{
-  height: 100%;
 }
-
-  site-nav-item-label{
-    text-align: center;
-    margin: auto;
-  }
-  .movie-overview {
-    display: block;
-  }
-  footer {
-    display: block;
-  }
-  figure.movie-image{
-    width: 100%;
-    display: inline;
-    position: relative;
-  }
-  .movie:nth-child(n+2) div.movie-details{
-    margin: 0px 0px 0px 0px;
-    width: 100%;
-    padding: 0 0px 0px 0px;
-    right: 0;
-  }
-  .movie:first-child div.movie-details{
-    width: 100%;
-    position: absolute;
-    left: 100px;
-  }
-
-  .movie-poster {
-    display: inline;
-    width: 33.333%;
-    margin: 0px;
-    padding: 0px;
-  }
-
-  .movie:first-child .movie-poster{
-    display: none;
-  }
-
-  .movie-backdrop {
-    display: none;
-  }
-
-  .movie:first-child .movie-backdrop{
-    position: relative;
-    display: block;
-      }
-
-  .movie-overview {
-    display: none;
-  }
-
-  .movie:first-child .movie-overview{
-    display: block;
-    color: black;
-  }
-
-  .movie {
-    display: inline;
-    position: relative;
-  }
-
-  main {
-    margin-left: 80px;
-  }*/
